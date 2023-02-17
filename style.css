@@ -158,7 +158,7 @@ hr{
 }
 .my-pic{
     width: 40%;
-    border: 8px solid white;
+    border: 8px solid rgb(34, 31, 31);
     border-radius: 100%;
 }
 .portfolio{
