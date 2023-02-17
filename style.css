@@ -10,7 +10,6 @@ html{
     background: rgb(2,0,36);
     background: linear-gradient(330deg, rgba(2,0,36,1) 0%, rgba(2,2,32,1) 21%, rgba(0,0,0,1) 48%);
     margin: -8px;
-    /* height: 8000px; */
 }
 .nav-main{
     display: flex;
@@ -84,7 +83,7 @@ html{
 }
 .main-body{
     display: flex;
-    margin-top: 180px;
+    margin-top: 200px;
     /* margin-left: 150px; */
     /* margin-right: 150px; */
     padding-bottom: 100px;
@@ -115,6 +114,15 @@ html{
     /* width: 50%; */
     /* height: 100%; */
     margin: 20px;
+    margin-top: 10px;
+}
+.about-heading{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.line3{
+    margin-top: -15px;
+    margin-bottom: 100px;
 }
 .font-change{
     color: rgb(63, 63, 173);
@@ -156,9 +164,11 @@ hr{
 .portfolio{
     margin-left: 60px;
     margin-right: 30px;
+    padding-bottom: 100px;
 }
 .line1{
     margin-left: -30px;
+    margin-bottom: 50px;
 }
 .port-heading{
     font-family: 'Ubuntu', sans-serif;
@@ -179,6 +189,70 @@ hr{
 .tiles:hover{
     box-shadow: 0px 0px 5px 5px rgb(1, 58, 77);
 }
+.contact-us{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px ;
+    background-image: linear-gradient(transparent,black);
+    margin-left: 287px;
+    margin-right: 287px;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.contact-form input{
+    background-color: white;
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+.line2{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.submit-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    transition: 0.6s;
+}
+.submit-button:hover{
+    background-color: rgb(114, 77, 218);
+    color: white;
+}
+.contact-heading{
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.main-footer{
+    margin: -8px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-color{
+    color: rgb(114, 77, 218);
+}
 @media screen and (max-width:810px) {
     .fixed-nav{
         width: 80%;
@@ -189,6 +263,12 @@ hr{
     .nav-right{
         padding-bottom: 17px;
         
+    }
+    .line2 .line3{
+        display: none;
+    }
+    .contact-us{
+        display: none;
     }
     
 }
@@ -207,6 +287,12 @@ hr{
     .social-bar{
         padding-right: 10px;
     }
+    .line2 .line3{
+        display: none;
+    }
+    .contact-us{
+        display: none;
+    }
 }
 @media screen and (max-width:768px){
     .logo{
@@ -221,6 +307,12 @@ hr{
     }
     .social-bar{
         padding-right: 10px;
+    }
+    .line2 .line3{
+        display: none;
+    }
+    .contact-us{
+        display: none;
     }
 }
 @media screen and (max-width:412px){
@@ -305,4 +397,11 @@ hr{
         padding-bottom: 50px;
         margin-top: -50px;
     }
+    .line2 .line3{
+        display: none;
+    }
+    .contact-us{
+        display: none;
+    }
 }
+
