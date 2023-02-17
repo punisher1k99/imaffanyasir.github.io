@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
+html{
+    /* font-family: 'Open Sans',sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+.main-header{
+    background: rgb(2,0,36);
+    background: linear-gradient(330deg, rgba(2,0,36,1) 0%, rgba(2,2,32,1) 21%, rgba(0,0,0,1) 48%);
+    margin: -8px;
+    /* height: 8000px; */
+}
+.nav-main{
+    display: flex;
+    justify-content: center;
+}
+.fixed-nav{
+    width: 50%;
+    position: fixed;
+    background-color: black;
+    opacity: 90%;
+    top: 3vh;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: white;
+    display: flex;
+}
+.logo{
+    height: 50px;
+    border-radius: 15px;
+    padding: 5px;
+    float: left;
+    /* cursor: not-allowed; */
+}
+.nav-right{
+    /* display: flex; */
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+
+}
+.page-link{
+    text-decoration: none;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.page-link:hover{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    text-decoration: none;
+}
+
+.link-main{
+    margin-right: 15px;
+}
+.social-bar{
+    background-color: black;
+    position: fixed;
+    right: 0px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.social-icon{
+    cursor: pointer;
+    height: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 7px;
+    padding-right: 5px;
+}
+.social-icon1{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.main-body{
+    display: flex;
+    margin-top: 180px;
+    /* margin-left: 150px; */
+    /* margin-right: 150px; */
+    padding-bottom: 100px;
+}
+.tag-line{
+    color: white;
+    width: 60%;
+    /* margin-top: 30px; */
+    /* margin-right: 50px; */
+    margin-left: 90px;
+    /* width: 100%; */
+}
+.images{
+    display: flex;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.main-heading{
+    font-size: 50px;
+    cursor: default;
+}
+.image-1{
+    width: 60%;
+    
+    /* margin: 10px; */
+    /* width: 50%; */
+    /* height: 100%; */
+    margin: 20px;
+}
+.font-change{
+    color: rgb(63, 63, 173);
+}
+.description-image{
+    display: flex;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -20px;
+    margin-left: -50px;
+}
+.description{
+    font-family: 'Raleway', sans-serif;
+    width: 50%;
+    color: white;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 100px;
+}
+hr{
+    margin-left: 0px;
+}
+.profile{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 100px;
+    /* justify-content: center; */
+}
+.my-pic{
+    width: 40%;
+    border: 8px solid white;
+    border-radius: 100%;
+}
+.portfolio{
+    margin-left: 60px;
+    margin-right: 30px;
+}
+.line1{
+    margin-left: -30px;
+}
+.port-heading{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+    font-size: 35px;
+}
+.project-images{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tiles{
+    width: 30%;
+    margin: 10px;
+    margin-bottom: 30px;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+.tiles:hover{
+    box-shadow: 0px 0px 5px 5px rgb(1, 58, 77);
+}
+@media screen and (max-width:810px) {
+    .fixed-nav{
+        width: 80%;
+    } 
+    .page-link{
+        margin-left: 0px;
+    }
+    .nav-right{
+        padding-bottom: 17px;
+        
+    }
+    
+}
+@media screen and (max-width:820px){
+    .logo{
+        display: none;
+    }
+    .page-link{
+        font-size: 15px;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    .nav-right{
+        margin-bottom: 15px;
+    }
+    .social-bar{
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width:768px){
+    .logo{
+        display: inline;
+    }
+    .fixed-nav{
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-right{
+        padding-bottom: 0px;
+    }
+    .social-bar{
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width:412px){
+    .logo{
+        display: none;
+    }
+    .nav-right{
+        margin-left: 0px;
+    }
+    .fixed-nav{
+        justify-content: center;
+        align-items: center;
+    }
+    .page-link{
+        padding-left: 0px;
+        margin-right: 10px;
+    }
+    .link-main{
+        display: none;
+    }
+    .main-body{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .main-heading{
+        font-size: 30px;
+    }
+    .social-bar{
+        display: none;
+    }
+    .images{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .image-1{
+        width: 50%;
+    }
+    .profile{
+        display: block;
+        margin: auto;
+        margin-left: 30px;
+        margin-right: 30px; 
+        margin-bottom: 0px;     
+        margin-top: 0px;
+    }
+    hr{
+        display: none;
+    }
+    .description{
+        text-align: center;
+        width: 100%;
+        font-size: 17px;
+    }
+    .description-image{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0px;
+    }
+    .project-images{
+        flex-direction: column;
+        margin-left: -30px;
+        align-items: center;
+    }
+    .tiles{
+        width: 80%;
+        display: block;
+        margin-top: 10px;
+
+    }
+    .port-heading{
+        /* text-align: center; */
+        justify-content: center;
+        font-size: 30px;
+    }
+    .portfolio{
+        padding-bottom: 50px;
+        margin-top: -50px;
+    }
+}
